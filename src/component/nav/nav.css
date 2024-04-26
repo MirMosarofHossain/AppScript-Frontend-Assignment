@@ -1,0 +1,144 @@
+nav{
+    padding: 23px 6%;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+.menu-logo{
+    display: none;
+}
+.nav-top ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+.company-logo{
+    font-size: 2.1rem;
+  font-weight: 700;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-top select[name="language"]{
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+.nav-top select[name="language"]:focus{
+    outline: none;
+}
+.nav-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.nav-bottom ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: #fff;
+    z-index: 999;
+    padding: 0px 25px;
+    border: 1px solid #ede9e9;
+    box-shadow: 0px 0px 5px #ddd8d8;
+}
+.drop-down ul{
+list-style: none;
+}
+.drop-down ul li{
+    margin: 25px 0px;
+}
+.home-shop{
+    display: none;
+    padding: 12px 3.5% 12px 4%;
+    font-size: 12px;
+}
+.home-shop span:first-child{
+    color: #BFC8CD;
+}
+.vl{
+    font-size: 14px;
+    line-height: 14px;
+    color: #BFC8CD;
+}
+
+@media screen and (max-width:760px) {
+    .nav-top ul{
+        gap: 20px;
+    }
+    .nav-bottom ul{
+        gap: 30px;
+        /* font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 700; */
+    }
+}
+@media screen and (max-width:700px) {
+    .nav-top ul{
+        gap: 15px;
+    }
+}
+@media screen and (max-width:650px) {
+    .nav-top ul{
+        gap: 10px;
+    }
+    .nav-bottom ul{
+        gap: 20px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:570px) {
+    nav{
+        padding: 23px 3.5% 23px 4%;
+    }
+    .nav-top ul{
+        gap: 5px;
+    }
+    .company-logo{
+        font-size: 1.8rem;
+    }
+
+}
+@media screen and (max-width:480px) {
+    nav{
+        padding: 12px 3.5% 12px 4%;
+    }
+   .d-none{
+    display: none;
+   }
+.nav-top img{
+    height: 20px;
+    width: 20px;
+}
+.menu-logo{
+    display: inline;
+    margin-right: 15px;
+}
+.drop-down{
+    display: block;  
+}
+.company-logo{
+    font-size: 21px;
+}
+.home-shop{
+    display: block;
+}
+}

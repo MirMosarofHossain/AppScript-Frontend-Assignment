@@ -1,0 +1,265 @@
+footer{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 50px 48px 10px 6%;
+}
+.footer-top{
+    display: flex;
+}
+.footer-top-left{
+    width: 60%;
+    padding-right: 11%;
+    /* border: 1px solid white; */
+}
+.sm-text{
+    display: none;
+}
+.footer-top-right{
+    width: 40%;
+}
+.contact-lg h3{
+margin-bottom: 15px;
+}
+.contact-lg p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    margin-top: 15px;
+    /* line-height: 18px; */
+}
+/* .contact-lg p:last-child{
+    margin-bottom: 20px;
+} */
+/* .footer-top-right h3,p{
+    margin-bottom: 15px;
+} */
+.footer-top-left h3,p{
+    margin-bottom: 20px;
+}
+.footer-top-left p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+.input-box{
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-box button{
+    width: 184px;
+    height: 48px;
+    font-size: 16px;
+    border: 0.14px solid #464646;
+    color: #535252;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.input-box input{
+    width: 100%;
+    height: 48px;
+    color: #717171;
+    font-size: 18px;
+}
+.input-box input:focus{
+    outline: none;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.contact-sm{
+    display: none;
+}
+.logo-container span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dot{
+    font-size: 24px;
+}
+.usLogo{
+    height: 24px;
+    width: 24px;
+}
+.footer-top-right p{
+    color: #FFFFFF;
+}
+/* .footer-top-right p:last-child{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 11px;
+} */
+.currency{
+    padding: 30px 0px 25px 0px;
+}
+.currency p:last-child{
+    padding-top: 18px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+hr{
+    height: 0.14px;
+}
+.footer-bottom{
+    padding-top: 50px;
+    padding-right: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col >h3{
+    font-size: 24.71px;
+    font-weight: 700;
+}
+.col >span{
+    font-size: 0.9rem;
+    color: #dddddd;
+}
+.col a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #dddddd;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.social-media >img{
+  width: 32px;
+  height: 32px;
+}
+.payment{
+    display: flex;
+    gap: 8px;
+}
+
+.footer >p:last-child{
+    color: #dddddd;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 35px;
+}
+
+.footer-row-select-logo >img{
+   height: 32px;
+   width: 32px;
+}
+.footer-row-select-logo{
+    display: flex;
+    gap: 5px;
+}
+
+.sm-payment-section{
+    padding: 50px 0px 10px 0px;
+}
+.sm-footer-bottom{
+    display: none;
+}
+
+@media screen and (min-width:880px) and (max-width:1060px) {
+    .footer-bottom{
+        padding-right: 0px;
+    }
+    
+}
+
+@media screen and (max-width:880px) {
+    .footer{
+        padding: 50px 5% 10px 5%;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+    }
+    .footer-top-left{
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #FFFFFF;
+    }
+    .footer-top-left h3{
+        margin-bottom: 15px;
+    }
+    .sm-text{
+        display: block;
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .lg-text{
+        display: none;
+    }
+    .input-box{
+        margin-top: 22px;
+    }
+    .footer-top-right{
+        width: 100%;
+        padding-top: 25px;
+    }
+    .contact-lg{
+        display: none;
+    }
+    .contact-sm{
+        display: block;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .details p,span{
+        margin: 0;
+        padding: 0;
+    }
+    .details{
+        padding: 20px 0px 25px 0px;
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+    hr{
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+    
+    .lg-footer-bottom{
+        display: none;
+    }
+    .sm-footer-bottom{
+        display: block;
+    }
+    .payment{
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:427px) {
+    .footer{
+        padding: 50px 2% 10px 2%;
+    }
+    .footer-top-left .sm-text{
+        font-size: 0.9rem;
+    }
+    .details >p{
+   font-size: 14px;
+    }
+
+}
+@media screen and (max-width:352px) {
+    .details{
+        gap: 3px;
+    }
+    .input-box{
+        gap: 10px;
+    }
+
+}
+@media screen and (max-width:338px) {
+    .details >p{
+   font-size: 12px;
+    }
+
+}

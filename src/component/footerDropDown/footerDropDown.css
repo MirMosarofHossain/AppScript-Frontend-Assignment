@@ -1,0 +1,41 @@
+
+.row-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.row-top >h3{
+    font-size: 1.1rem;
+}
+.footer-arrow-up{
+  height: 16px;
+  width: 16px;
+  rotate: 180deg;
+}
+.footer-arrow-down{
+    height: 16px;
+    width: 16px;
+  }
+.row{
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.row-bottom{
+  font-size: 1rem;
+}
+
+.footer-row-select{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row-select span:first-child{
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #BFC8CD;
+  text-decoration: underline;
+}
+

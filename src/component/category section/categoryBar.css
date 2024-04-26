@@ -1,0 +1,137 @@
+.categoryBar{
+    padding: 5px 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    border-left: none;
+    border-right:none ;
+}
+
+.categoryBar select:focus{
+ outline: none;
+}
+.categoryBar select option{
+    padding: 50px 5px;
+}
+
+.show img{
+    rotate: 180deg;
+}
+.show , .hide{
+    cursor: pointer;
+    position: absolute;
+    left: 180px;
+    text-decoration: underline;
+    color: #888792;
+}
+
+.select-top{
+    display: flex;
+    gap: 5px;
+}
+.select-top >img:last-child{
+    width: 16px;
+    height: 16px;
+    rotate: -90deg;
+}
+.select-bottom{
+    padding: 25px 25px;
+    border: 1px solid #f3eeee;
+    display: flex;
+    right: 0;
+    top: 52px;
+    flex-direction: column;
+    align-items: end;
+    gap: 35px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px #aea9a9;
+    z-index: 99999;
+}
+
+.bold{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.normal{
+    font-weight: 300;
+}
+
+
+@media screen and (max-width:750px) {
+    .show , .hide{
+        left: 120px;
+    }
+}
+@media screen and (max-width:550px) {
+    .bold{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .show img{
+        height: 12px;
+        width: 12px;
+    }
+     .hide img{
+        height: 12px;
+        width: 12px;
+    }
+    .show , .hide{
+        left: 100px;
+        font-size: 0.8rem;
+    }
+    .categoryBar select{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .show , .hide{
+        display: block;
+        position: relative;
+        left: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #E5E5E5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+    }
+    .categoryBar select option{
+        padding: 0px 0px;
+        margin: 0;
+    }
+    .select{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+
+    }
+    .select-top >span:first-child{
+        font-size: 12px;
+    }
+    .categoryBar select{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:343px){
+    .categoryBar select{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .show , .hide{
+        font-size: 12px;
+    }
+}

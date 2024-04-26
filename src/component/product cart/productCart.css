@@ -1,0 +1,158 @@
+.image{
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+}
+.img-container{
+    width: 100%;
+    height: 300px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.1px solid #ebe2e2;
+    width:300px;
+    box-shadow: 0px 0px 10px #fff3f3;
+    /* background-color: rgb(157, 157, 178); */
+}
+.card p{
+    font-size: 14px;
+    color: #888792;
+}
+.card h3{
+    padding-top: 15px;
+}
+.card-bottom{
+    /* padding: 15px 0px 0px 0px; */
+    display: flex;
+    justify-content: space-between;
+}
+.card-bottom >p{
+    padding: 7px 0px 4px 0px;
+    margin-bottom: 0px;
+}
+.card-bottom img{
+    width: 24px;
+    height: 24px;
+    /* background-color: red; */
+    /* overflow: hidden; */
+    /* color: red; */
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1366px) {
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 250px;
+       }
+       .card{
+           width:250px;
+       }
+
+}
+@media screen and (min-width:886px) and (max-width:1074px){
+
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 250px;
+       }
+       .card{
+           width:250px;
+       }
+}
+
+@media screen and (min-width:597px) and (max-width:710px){
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 250px;
+       }
+       .card{
+           width:250px;
+       }
+}
+
+@media screen and (max-width:596px){
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 197px;
+       }
+       .card{
+           width:198px;
+       }
+       .card p{
+        font-size: 10px;
+    }
+    .card-bottom img{
+        width: 16px;
+        height: 16px;
+    
+    }
+}
+@media screen and (min-width:407px) and (max-width:479px){
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 168px;
+       }
+       .card{
+           width:168px;
+       }
+       .card p{
+        font-size: 10px;
+    }
+    .card-bottom img{
+        width: 16px;
+        height: 16px;
+    
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:407px){
+
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .img-container{
+           width: 100%;
+           height: 300px;
+       }
+       .card{
+           width:300px;
+       }
+       .card p{
+        font-size: 14px;
+    }
+    .card-bottom img{
+        width: 24px;
+        height: 24px;
+    
+    }
+}
+

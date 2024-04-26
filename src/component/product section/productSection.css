@@ -1,0 +1,29 @@
+.product-section{   
+     padding: 0px 6%;  
+     /* border: 2px solid black;   */
+}
+.product-container{
+     display: flex;
+}
+.left-container{
+     width: 300px;
+     padding-bottom: 20px;
+}
+.right-container{
+     width: 100%;
+}
+
+
+@media screen and (max-width:1000px) {
+     .product-container{
+          position: relative;
+     }
+     .left-container{
+          position: absolute;
+          /* width: 50vw; */
+          background-color: white;
+          border: 0.2px solid #f7f3f3;
+          padding: 0px 15px 15px 15px;
+          box-shadow: 4px 0px 5px rgba(112, 110, 110, 0.5);
+     }
+} 

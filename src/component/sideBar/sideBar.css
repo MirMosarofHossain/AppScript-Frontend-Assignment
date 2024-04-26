@@ -1,0 +1,21 @@
+.sidebar{
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-top: 25px;
+
+}
+.customize{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.customize span{
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.customize input{
+    width: 19px;
+    height: 19px;
+    border: 0.92px solid #4D4D4D;
+}
