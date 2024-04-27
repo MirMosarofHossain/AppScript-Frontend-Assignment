@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 0.1px solid #ebe2e2;
+    border: 0.1px solid #faf9f9;
     width:300px;
-    box-shadow: 0px 0px 10px #fff3f3;
+    box-shadow: 0px 0px 10px #f9f6f6;
     /* background-color: rgb(157, 157, 178); */
 }
 .card p{
@@ -31,6 +31,9 @@
 .card-bottom >p{
     padding: 7px 0px 4px 0px;
     margin-bottom: 0px;
+}
+.card-bottom p a{
+    color: #888792;
 }
 .card-bottom img{
     width: 24px;
@@ -108,6 +111,10 @@
         height: 16px;
     
     }
+    .card >h3{
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
 }
 @media screen and (min-width:407px) and (max-width:479px){
     .image{
@@ -130,6 +137,11 @@
         height: 16px;
     
     }
+    .card >h3{
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+
 }
 
 @media screen and (min-width:350px) and (max-width:407px){
@@ -153,6 +165,10 @@
         width: 24px;
         height: 24px;
     
+    }
+    .card >h3{
+        font-size: 1.1rem;
+        letter-spacing: 0px;
     }
 }
 

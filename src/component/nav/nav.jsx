@@ -26,7 +26,7 @@ export default function Nav() {
         <section className="nav-top">
             <span>
                 <img className="menu-logo" src={menuLogo} alt="logo" onClick={menuIconHandler}/>
-                <img src={`${logo2}`} alt="logo" />
+                <img onClick={homeClickHandler} src={`${logo2}`} alt="logo" />
             </span>
 
             <span className="company-logo">LOGO</span>

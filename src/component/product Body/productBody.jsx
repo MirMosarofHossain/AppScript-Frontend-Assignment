@@ -8,7 +8,7 @@ import ProductCart from "../product cart/productCart.jsx";
 export default function ProductBody({showSidebar}){
     const dispatch = useDispatch()
     const {products} = useSelector((store)=>store.productData)
-console.log("main pro......" , products);
+// console.log("main pro......" , products);
     useEffect(()=>{
         const getData = async ()=>{
             let {data} = await axios.get("https://fakestoreapi.com/products") 
