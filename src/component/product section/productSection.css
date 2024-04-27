@@ -27,3 +27,8 @@
           box-shadow: 4px 0px 5px rgba(112, 110, 110, 0.5);
      }
 } 
+@media screen and (max-width:407px){
+     .product-section{   
+          padding: 0px 2%;  
+     }
+}
