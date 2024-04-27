@@ -6,7 +6,6 @@ import ProductBody from "../product Body/productBody"
 
 export default function ProductSection() {
     const [showSidebar, setShowSidebar] = useState(false)
-
     return <section className="product-section">
         <CategoryBar setShowSidebar={setShowSidebar} />
         <div className="product-container">

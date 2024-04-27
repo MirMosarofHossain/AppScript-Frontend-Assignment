@@ -6,11 +6,21 @@ import bagLogo from "../../assets/bagLogo.png"
 import userLogo from "../../assets/userLogo.png"
 import menuLogo from "../../assets/menulogo.png"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 export default function Nav() {
     const [showDropdown, setShowDropdown] = useState(false)
+
     const menuIconHandler = ()=>{
    setShowDropdown((state)=>!state)
     }
+    
+   const navigate = useNavigate()
+   const heartClickHandler = ()=>{
+    navigate('/favorite')
+   }
+   const homeClickHandler = ()=>{
+    navigate('/')
+   }
     return <> 
     <nav>
         <section className="nav-top">
@@ -22,7 +32,7 @@ export default function Nav() {
             <span className="company-logo">LOGO</span>
             <ul>
                 <li><img src={`${searchLogo}`} alt="logo" /></li>
-                <li><img src={`${heartLogo}`} alt="logo" /></li>
+                <li onClick={heartClickHandler}><img src={`${heartLogo}`} alt="logo" /></li>
                 <li><img src={`${bagLogo}`} alt="logo" /></li>
                 <li className="d-none"><img src={`${userLogo}`} alt="logo" /></li>
                 <li className="d-none"><select name="language" id="">
@@ -35,7 +45,7 @@ export default function Nav() {
 
         <section className="nav-bottom d-none">
             <ul>
-                <li>SHOP</li>
+                <li onClick={homeClickHandler}>SHOP</li>
                 <li>SKILLS</li>
                 <li>STORIES</li>
                 <li>ABOUT</li>
@@ -59,7 +69,7 @@ export default function Nav() {
     </nav>
 
     <div className="home-shop">
-       <span>HOME </span>
+       <span onClick={homeClickHandler}>HOME </span>
        <span className="vl">|</span>
        <span> SHOP</span>
     </div>

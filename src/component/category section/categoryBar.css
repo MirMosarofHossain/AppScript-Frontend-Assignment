@@ -83,9 +83,6 @@
         left: 100px;
         font-size: 0.8rem;
     }
-    .categoryBar select{
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width:480px){
@@ -104,10 +101,7 @@
         color: black;
         text-decoration: none;
     }
-    .categoryBar select option{
-        padding: 0px 0px;
-        margin: 0;
-    }
+
     .select{
         width: 50%;
         height: 100%;
@@ -120,17 +114,10 @@
     .select-top >span:first-child{
         font-size: 12px;
     }
-    .categoryBar select{
-        font-size: 14px;
-        font-weight: 700;
-    }
+
 }
 
 @media screen and (max-width:343px){
-    .categoryBar select{
-        font-size: 12px;
-        font-weight: 700;
-    }
     .show , .hide{
         font-size: 12px;
     }
